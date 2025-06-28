@@ -1,10 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import "tailwindcss";
-
 @theme {
   /* Typography */
-  --font-sans: "Golos Text", sans-serif;
-  --font-sans: "Golos Text", sans-serif;
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
@@ -39,8 +34,8 @@
   }
 
   body {
-    @apply text-primary 
-      bg-background 
+    @apply text-primary bg-background;
+    font-family: 'Noto Sans Variable', sans-serif;
       /* min-h-screen 
       antialiased; */
   }

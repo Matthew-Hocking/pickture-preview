@@ -1,0 +1,77 @@
+@layer utilities {
+/* Base animation styles */
+  [data-animate] {
+    opacity: 0;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+
+  [data-animate].animate-in {
+    opacity: 1;
+  }
+
+  /* Fade up animation (default) */
+  [data-animate="fade-up"] {
+    transform: translateY(30px);
+  }
+
+  [data-animate="fade-up"].animate-in {
+    transform: translateY(0);
+  }
+
+  /* Fade down animation */
+  [data-animate="fade-down"] {
+    transform: translateY(-30px);
+  }
+
+  [data-animate="fade-down"].animate-in {
+    transform: translateY(0);
+  }
+
+  /* Fade left animation */
+  [data-animate="fade-left"] {
+    transform: translateX(30px);
+  }
+
+  [data-animate="fade-left"].animate-in {
+    transform: translateX(0);
+  }
+
+  /* Fade right animation */
+  [data-animate="fade-right"] {
+    transform: translateX(-30px);
+  }
+
+  [data-animate="fade-right"].animate-in {
+    transform: translateX(0);
+  }
+
+  /* Scale animation */
+  [data-animate="scale"] {
+    transform: scale(0.9);
+  }
+
+  [data-animate="scale"].animate-in {
+    transform: scale(1);
+  }
+
+  /* Custom delays */
+  [data-animate][data-delay="100"] {
+    transition-delay: 100ms;
+  }
+
+  [data-animate][data-delay="200"] {
+    transition-delay: 200ms;
+  }
+
+  [data-animate][data-delay="300"] {
+    transition-delay: 300ms;
+  }
+
+  [data-animate][data-delay="400"] {
+    transition-delay: 400ms;
+  }
+
+  [data-animate][data-delay="500"] {
+    transition-delay: 500ms;
+  }
+}

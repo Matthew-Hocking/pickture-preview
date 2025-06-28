@@ -1,0 +1,34 @@
+---
+import { Search, Check, RefreshCw } from '@lucide/astro/icons';
+
+export interface Props {
+  index: number;
+  step: {
+    icon: 'search' | 'check' | 'refresh-cw';
+    title: string;
+    description: string;
+  };
+}
+
+const { step, index } = Astro.props;
+
+const IconMap = {
+  search: Search,
+  check: Check,
+  'refresh-cw': RefreshCw
+};
+
+const Icon = IconMap[step.icon];
+---
+
+<div class="card">
+  <div>
+    <div class="flex flex-row items-center gap-4">
+      <p class="text-sm text-secondary w-6 h-6 flex items-center justify-center rounded-full bg-brand-secondary">
+        {index + 1}
+      </p>
+      <h4 class="font-thin">{step.title}</h3>
+    </div>
+    <p class="pt-4 whitespace-pre-line">{step.description}</p>
+  </div>
+</div>
