@@ -1,20 +1,18 @@
 ---
 import "../styles/main.css";
-import '@fontsource-variable/noto-sans';
+import "@fontsource-variable/noto-sans";
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Pickture Preview</title>
-	</head>
-	<body>
-    <main class="my-container">
-      <slot />
-    </main>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Pickture Preview</title>
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>

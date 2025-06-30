@@ -1,0 +1,67 @@
+---
+import { Image } from "astro:assets";
+import localMoviesDesktop from "../assets/movies-page_desktop.png";
+import localMovieDesktop from "../assets/movie-page_desktop.png";
+import localMovieMobile from "../assets/movie-page_mobile.png";
+---
+
+<section
+  id="screenshots"
+  class="block-wrapper block-wrapper--bg-brand flex flex-col gap-18 pb-[clamp(4rem,12vw,10rem)]"
+>
+  <!-- Desktop Movies -->
+  <div
+    class="flex flex-col-reverse md:flex-row justify-center items-center gap-6 md:gap-12"
+  >
+    <div class="min-w-[280px] md:max-w-md flex-1" data-animate="fade-right">
+      <h3>Build your shortlist</h3>
+      <p>
+        Easily search and add movies from all your favourite streaming services.
+        Everything you're interested in - all in one place, ready for movie
+        night.
+      </p>
+    </div>
+    <div data-animate="fade-left">
+      <Image
+        src={localMoviesDesktop}
+        width={700}
+        class="border-3 rounded-xl shadow-xl/30"
+        alt="Screenshot of Pickture app movies page on desktop"
+      />
+    </div>
+  </div>
+
+  <!-- Desktop and Moble movie page -->
+  <div
+    class="flex flex-col-reverse md:flex-row-reverse justify-center items-center gap-18"
+  >
+    <div class="min-w-[280px] md:max-w-md flex-1" data-animate="fade-left">
+      <h3>Home, or on the road?</h3>
+      <p>
+        <p>
+          Whether you’re on the couch or out and about, Pickture works wherever
+          you are. Browse rich pages with details and direct links to stream -
+          seamlessly on desktop or mobile.
+        </p>
+      </p>
+    </div>
+
+    <div class="relative" data-animate="fade-right">
+      <!-- Desktop Movie page -->
+      <Image
+        src={localMovieDesktop}
+        width={700}
+        class="border-3 border-[--color-border] rounded-xl shadow-xl/30"
+        alt="Screenshot of Pickture app movie page on desktop"
+      />
+
+      <!-- Overlapping Mobile Movie page -->
+      <Image
+        src={localMovieMobile}
+        width={250}
+        class="absolute bottom-0 right-[clamp(1rem,8vw,6rem)] w-30 sm:w-38 md:w-40 lg:w-52 translate-x-1/4 translate-y-1/4 border-3 rounded-xl shadow-xl/30"
+        alt="Screenshot of Pickture app movie page on mobile"
+      />
+    </div>
+  </div>
+</section>

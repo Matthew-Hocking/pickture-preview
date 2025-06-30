@@ -1,26 +1,23 @@
 ---
-import StepTile from './StepTile.astro';
+import StepTile from "./StepTile.astro";
 
 const steps = [
   {
-    icon: 'search',
     title: "Search",
-    description: "Find your favourites!\nSearch ",
+    description: "Find what you love, or discover something new - all across platforms like Netflix, Disney+, and more",
   },
   {
-    icon: 'check',
     title: "Save",
     description:
-      "Keep track of your top picks in one place - across all streaming services!",
+      "Build your watchlist as you go. Your picks stay saved, ready to spin when the moment’s right.",
   },
   {
-    icon: 'refresh-cw',
     title: "Spin",
-    description: "Discover something new to watch!",
+    description: "Want something at random, or go with a vibe?. Pickture chooses something for you - fast, fair, and argument-free.",
   },
 ] as const;
 ---
 
-<div class="grid lg:grid-cols-3 gap-8 pt-4 sm:max-w-md lg:max-w-none">
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 pt-4">
   {steps.map((step, index) => <StepTile step={step} index={index} />)}
 </div>

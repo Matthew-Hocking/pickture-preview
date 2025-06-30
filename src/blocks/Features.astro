@@ -1,0 +1,53 @@
+---
+import { Globe, Dices, Link, TvMinimalPlay } from "@lucide/astro/icons";
+---
+
+<section id="feature-highlights" class="block-wrapper">
+  <div class="flex justify-center">
+    <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-18 w-full">
+      <li class="flex flex-row items-start gap-4 h-full" data-animate="fade-up">
+        <Dices class="text-brand-primary" size={36} />
+        <div class="flex flex-col flex-1">
+          <h4 class="font-[300]">Smart Randomiser</h4>
+          <p class="text-base text-secondary mt-auto">
+            Get a random pick tailored to your mood. Choose your vibe, and let
+            the app do the rest — no more endless scrolling.
+          </p>
+        </div>
+      </li>
+
+      <li class="flex flex-row items-start gap-4 h-full" data-animate="fade-up">
+        <Globe class="text-brand-primary" size={36} />
+        <div class="flex flex-col flex-1">
+          <h4 class="font-[300]">Region Specific</h4>
+          <p class="text-base text-secondary mt-auto">
+            See only what's available in your region, so your picks actually
+            play.
+          </p>
+        </div>
+      </li>
+
+      <li class="flex flex-row items-start gap-4 h-full" data-animate="fade-up">
+        <TvMinimalPlay class="text-brand-primary" size={36} />
+        <div class="flex flex-col flex-1">
+          <h4 class="font-[300]">Streaming-Aware</h4>
+          <p class="text-base text-secondary mt-auto">
+            Filter your list by platforms you subscribe to - Netflix, Disney+,
+            and more.
+          </p>
+        </div>
+      </li>
+
+      <li class="flex flex-row items-start gap-4 h-full" data-animate="fade-up">
+        <Link class="text-brand-primary" size={36} />
+        <div class="flex flex-col flex-1">
+          <h4 class="font-[300]">Straight to the source</h4>
+          <p class="text-base text-secondary mt-auto">
+            Every result gives you a link to the source – you're one click away
+            from watching!
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
